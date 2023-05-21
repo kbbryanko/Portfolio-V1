@@ -39,3 +39,47 @@ nav a:hover {
 }
 
 /* Home */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.fade-in-descend, .fade-in {
+    opacity: 0;
+}
+
+@keyframes fade-in-descend {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-descend {
+    animation: fade-in-descend 2s ease forwards;
+    font-size: calc(60px + 2vw); 
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fade-in 2s ease 1s forwards; /* 1s delay so this fades in after the heading */
+    font-size: calc(10px + 0.5vw); 
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
