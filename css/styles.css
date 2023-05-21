@@ -1,0 +1,41 @@
+body{
+    /* websites have default margin and padding */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    /* fixed position on top */
+    position: fixed; 
+    /* position at the top of the page */
+    top: 0;
+    /* full width */
+    width: 100%; 
+    /* set background color to light gray */
+    background-color: rgba(211, 211, 211, 0.5);
+    /* some padding to give the navbar some height */
+    padding: 2vh 0; 
+    /* align the nav items in the center */
+    text-align: right; 
+}
+
+nav a {
+    /* give each link some space on left and right */
+    margin: 0 15px; 
+    /* remove underline */
+    text-decoration: none; 
+    /* set text color */
+    color: black; 
+    /* spacing from the right*/
+    padding-right: 3vw;
+    /* font size, using calc allows me to set a minumum font-size*/
+    font-size: calc(10px + 1vw);
+}
+
+nav a:hover {
+    color: gray;
+    transition: color 0.5s ease;
+}
+
+/* Home */
