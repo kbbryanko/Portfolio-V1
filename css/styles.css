@@ -144,6 +144,7 @@ nav a:hover {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
+    overflow: auto;
 }
 
 .project-card img {
@@ -151,5 +152,52 @@ nav a:hover {
   height: 70%; /* or any height you desire */
   object-fit: cover;
   border-radius: 10px;
+}
+
+/* Contact */
+#contact {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact p {
+  margin-bottom: 20px;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-method {
+  width: 200px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-method i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .contact-methods {
+      flex-direction: column;
+  }
+
+  .contact-method {
+      width: 80%;
+      margin: 10px auto;
+  }
 }
 
