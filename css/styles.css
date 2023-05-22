@@ -30,7 +30,7 @@ nav a {
     /* spacing from the right*/
     padding-right: 3vw;
     /* font size, using calc allows me to set a minumum font-size*/
-    font-size: calc(10px + 1vw);
+    font-size: calc(15px + .5vw);
 }
 
 nav a:hover {
@@ -64,7 +64,7 @@ nav a:hover {
   
   .fade-in-descend {
     animation: fade-in-descend 2s ease forwards;
-    font-size: calc(60px + 2vw); 
+    font-size: calc(40px + 2vw); 
     margin-bottom: 20px; /* Adjust as needed */
   }
   
@@ -79,7 +79,48 @@ nav a:hover {
   
   .fade-in {
     animation: fade-in 2s ease 1s forwards; /* 1s delay so this fades in after the heading */
-    font-size: calc(10px + 0.5vw); 
+    font-size: calc(15px + 0.5vw); 
     margin-top: 20px; /* Adjust as needed */
   }
   
+  /* About */
+  .about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .profile-pic {
+    width: 40%;
+    border-radius: 20%; /* This will make your picture circular, feel free to remove if you prefer a different shape */
+  }
+  
+  .about-text {
+    max-width: 600px;
+    font-size: calc(12px + 0.5vw);
+  }
+  
+  .about-text h2 {
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    text-align: justify;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: start;
+    }
+    .about-text {
+        margin-left: 0;
+        text-align: center;
+    }
+    .profile-pic {
+        width: 100%;
+        border-radius: 20%;  
+      }
+} 
